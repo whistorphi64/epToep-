@@ -1,0 +1,169 @@
+\documentclass[aps,tightenlines,16pt]{ctexart}
+
+\usepackage{slashed}
+\usepackage{amsmath,amsfonts,amssymb}
+% \usepackage{bm}  %黑体希腊字母
+\usepackage{bbm} %空心字母数字
+\usepackage{dsfont}
+\usepackage{ctex}
+\usepackage{float}
+%\usepackage[dvips]{graphicx}
+\usepackage[english]{babel}
+\allowdisplaybreaks[4]  %公式环境换行
+\numberwithin{equation}{section}
+\usepackage{slashed} %费曼slashed
+\usepackage{simplewick} %wick收缩
+\usepackage[left=2cm,right=2cm,top=2.54cm,bottom=2.54cm]{geometry}
+%\usepackage[dvipdfm,pdfstartview=FitH]{hyperref}
+%\usepackage{cancel}
+%\usepackage{forest}
+%\usepackage{leftidx}  %设置上下标
+\usepackage{cite}
+\usepackage[justification=centering]{caption}
+\usepackage{graphicx, subfigure}
+\usepackage{indentfirst}  %段落首行缩进
+\usepackage{hyperref}  %设定引用公式跳转链接
+\usepackage{color}  %设置字体颜色
+\usepackage{tikz,pgf}
+% \usepackage{tikz-feynman} 
+%\tikzfeynmanset{compat=1.1.0}
+\usepackage{braket}
+%\usepackage{txfonts}  %平行符号
+%\usepackage{fancyhdr}  %左偶右奇
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{cancel}   
+\usepackage{threeparttable}  
+\usepackage{diagbox}
+\usepackage{extpfeil}  %等号上加文字
+\usepackage{extarrows}
+
+\usetikzlibrary{calc}
+%\usetikzlibrary{arrows.meta}
+\usetikzlibrary{intersections}
+\usetikzlibrary{trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{patterns}
+\tikzset{
+   global scale/.style={
+      scale=#1,
+      every node/.append style={scale=#1}},
+   photon/.style={decorate, decoration={snake}, draw=red},
+   nucleon/.style={draw=black, postaction={decorate},
+      decoration={markings,mark=at position .55 with{\arrow[draw=black]{>}}}},
+   pion/.style={draw=blue, postaction={decorate},
+      decoration={markings,mark=at position .55 with{\arrow[draw=blue]{}}}},
+    }
+
+
+\newcommand{\bl}{\boldsymbol{l}}
+\newcommand{\bk}{\boldsymbol{k}}
+\newcommand{\bp}{\boldsymbol{p}}
+\newcommand{\bP}{\boldsymbol{P}}
+\newcommand{\bq}{\boldsymbol{q}}
+\newcommand{\bA}{\boldsymbol{A}}
+\newcommand{\bM}{\boldsymbol{M}}
+\newcommand{\bV}{\boldsymbol{V}}
+\newcommand{\ba}{\boldsymbol{a}}
+\newcommand{\bb}{\boldsymbol{b}}
+\newcommand{\bx}{\boldsymbol{x}}
+\newcommand{\bep}{\boldsymbol{\epsilon}}
+\newcommand{\bsi}{\boldsymbol{\sigma}}
+\newcommand{\bL}{\boldsymbol{L}}
+\newcommand{\bJ}{\boldsymbol{J}}
+\newcommand{\br}{\boldsymbol{r}}
+\newcommand{\bs}{\boldsymbol{s}}
+\newcommand{\bS}{\boldsymbol{S}}
+\newcommand{\bi}{\boldsymbol{i}}
+\newcommand{\bI}{\boldsymbol{I}}
+\newcommand{\bB}{\boldsymbol{B}}  
+\newcommand{\sP}{\slashed{P}} 
+\newcommand{\spp}{\slashed{p}} 
+\newcommand{\sk}{\slashed{k}} 
+\newcommand{\sq}{\slashed{q}}
+\newcommand{\sD}{\slashed{D}} 
+\newcommand{\sA}{\slashed{A}}
+\newcommand{\sep}{\slashed{\epsilon}} 
+\newcommand{\spar}{\slashed{\partial}} 
+\newcommand{\Pmu}{P^\mu} 
+\newcommand{\pmu}{p^\mu} 
+\newcommand{\kmu}{k^\mu} 
+\newcommand{\qmu}{q^\mu}
+\newcommand{\gmu}{\gamma^\mu}
+\newcommand{\bpi}{\boldsymbol{\pi}}
+\newcommand{\btau}{\boldsymbol{\tau}}
+\newcommand{\brho}{\boldsymbol{\rho}}
+\newcommand{\md}{\mathrm{d}}
+\newcommand{\mB}{\mathbf{B}}
+\newcommand{\mO}{\mathcal{O}}
+\newcommand{\mL}{\mathcal{L}}
+\newcommand{\mM}{\mathcal{M}}
+\newcommand{\bm}[1]{\mbox{\boldmath{$#1$}}}
+\newcommand{\Tr}{\text{Tr}}
+\allowdisplaybreaks
+
+
+\begin{document}\large
+     %\title{手征微扰场论阅读笔记} 
+     \title{轻子质子散射}
+     
+\renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
+ \author{王旭}
+ \maketitle
+ %\newpage
+ \setlength{\parindent}{2em}  %首行缩进两个中文字符
+ \hypersetup{hypertex=true,
+            colorlinks=true,
+            linkcolor=blue,
+            anchorcolor=blue,
+            citecolor=blue}  %设定引用公式跳转链接
+ \renewcommand\thesubsection{\arabic {subsection}}
+ \renewcommand\contentsname{目录}
+\tableofcontents
+\newpage 
+\setcounter{page}{1}
+
+\include{chaps/背景.tex}
+
+
+\include{chaps/运动学.tex}
+
+
+\include{chaps/散射振幅.tex}
+
+
+\include{chaps/软光子近似.tex}
+
+
+\include{chaps/红外发散相消.tex}
+
+
+\include{chaps/Delta共振态的介绍.tex}
+
+
+% \include{chaps/5个Mandelstem变量.tex}
+
+
+\include{chaps/高阶拉氏量.tex}
+
+
+\include{chaps/费曼图的计算.tex}
+
+\include{chaps/重整化的计算.tex}
+
+
+
+
+
+\include{chaps/附录.tex}
+
+\newpage
+
+\renewcommand\refname{参考文献}
+
+\bibliographystyle{unsrt}
+
+\bibliography{ep}
+
+\end{document}

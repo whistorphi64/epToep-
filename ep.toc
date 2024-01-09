@@ -1,0 +1,16 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}背景知识}{1}{section.1}%
+\contentsline {subsection}{\numberline {1}形状因子}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {2}弹性散射过程}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}运动学变量}{6}{section.2}%
+\contentsline {section}{\numberline {3}散射振幅}{9}{section.3}%
+\contentsline {section}{\numberline {4}软光子近似下的散射截面}{11}{section.4}%
+\contentsline {section}{\numberline {5}红外发散相消}{16}{section.5}%
+\contentsline {section}{\numberline {6}$\Delta $共振态的介绍}{17}{section.6}%
+\contentsline {section}{\numberline {7}高阶拉氏量}{24}{section.7}%
+\contentsline {section}{\numberline {8}费曼图的计算}{26}{section.8}%
+\contentsline {section}{\numberline {9}重整化的计算}{34}{section.9}%
+\contentsline {section}{\numberline {A}附录}{36}{appendix.A}%
+\contentsline {subsection}{\numberline {1}三体相空间}{36}{subsection.A.1}%
+\contentsline {subsection}{\numberline {2}S参考系}{37}{subsection.A.2}%
+\contentsline {subsection}{\numberline {3}EOMS重整化与Becher和Leutwyler的红外正规化}{40}{subsection.A.3}%
